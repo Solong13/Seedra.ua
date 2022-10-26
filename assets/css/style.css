@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding-top: 26px;
+    display: flex;
+    
+}
+
+.logo {
+    margin-left: 173px;
+    margin-right: 50px;
+}
+
+.nav .menu {
+    display: flex; /*Выравнивание по горизонтали*/
+}
+
+ul, .all {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu, li, a {
+    color: #70737C; 
+    text-decoration: none;/*Убрать подчеркивание*/
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 530;
+    font-size: 14px;
+    line-height: 178.19%;
+}
+
+.menu  li .last{
+    margin-right: 47px;
+}
+
+.vl {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+    line-height: 178.19%;
+    margin-right: 15px;
+}
+
+.menu, .instagramLi {
+    margin-left: 0px;
+    margin-right: 13px;
+}
+/* Картинка яка не хотіла вирівнюватися */
+.menu .facebookF a .facebook-fill{
+    height: 23px;
+    width: 20px;
+}
