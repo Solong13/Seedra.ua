@@ -40,7 +40,7 @@
 
                  <div class="search-box">
                     <form action="" method="GET" class="formForSearch">
-                        <a class="search-btn" href="#" value="search"><img src="/assets/img/search.png" alt=""></a>
+                        <button><a class="search-btn" href="#" name="search" value="search"><img src="/assets/img/search.png" alt=""></a></button>
                         <input class="search-txt" type="text" name="search" placeholder="Search">
                     </form>
                 </div>
