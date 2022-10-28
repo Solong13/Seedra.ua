@@ -30,11 +30,14 @@
                     <li ><a href="#" class="last">LOGIN</a></li>
                 </ul>
 
-                <div class="contacts">
-                    <a href="#" class="likeLink"><img src="/assets/img/instagram-filled.svg" alt=""></a>
-                    <a href="#" class="cartLink"><img src="/assets/img/facebook-fill.png" alt=""></a>
-                </div>
-                
+                <a href="#" class="likeInst">
+                    <div class="contacts"></div>
+                </a>
+
+                <a href="#" class="likeFace">
+                    <div class="contactsFace"></div>
+                </a>
+
                  <div class="search-box">
                     <form action="" method="GET" class="formForSearch">
                         <a class="search-btn" href="#" value="search"><img src="/assets/img/search.png" alt=""></a>
@@ -49,14 +52,4 @@
             </div>
         </div>
     </header >
-    <section class="" id="">
-        <div class="container">
-            <div class="wrraper-content">
-                <div class="intro-picture">
-                    <img  class="header-picture" src="/assets/img/Liefes.png" alt="">
-                    <img  class="header-picture" src="/assets/img/Liefes.png" alt=""><img  class="header-picture" src="/assets/img/Liefes.png" alt="">
-                    <h1>asdasdasd</h1>
-                </div>
-             </div>  <!--wrraper-content -->
-        </div>
-    </section>
+ 

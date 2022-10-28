@@ -7,6 +7,10 @@
 ?>
 
 
+<?php
+    require($_SERVER['DOCUMENT_ROOT'] . '/partials/main.php');
+?>
+
 
 <?php
     require($_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php');

@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css");
+
+i {
+    font-family: fontawesome !important;
+}
 
 body {
     padding: 0;
     margin: 0;
 }
 
-* {
+header{
+    width: 100%;
+    
+}
+
+*,*:before,*:after {
     box-sizing: border-box;
 }
 
@@ -15,18 +25,26 @@ body {
 }
 
 .nav {
-    padding-top: 26px;
+    max-width: 1110px;
+    /* padding-top: 26px; */
+    margin: 0 auto;
     display: flex;
-    
+    padding-bottom: 23px;
+    position: relative;
 }
 
 .logo {
-    margin-left: 173px;
+    padding-top: 26px;
     margin-right: 50px;
 }
 
 .nav .menu {
     display: flex; /*Выравнивание по горизонтали*/
+    
+}
+
+.menu {
+    padding-top: 26px; 
 }
 
 ul, .all {
@@ -42,7 +60,7 @@ ul, li {
     padding: 0;
 }
 
-ul, li, img {
+ul li img {
     display: flex;
     margin: 0;
     padding: 0;
@@ -77,4 +95,49 @@ ul, li, img {
 .menu .facebookF a .facebook-fill{
     height: 23px;
     width: 20px;
+    margin-right: 15px;
+}
+
+/* Intro picture and descrption */
+
+.header-picture{
+    margin-top: 32px;
+}
+
+.search-box{
+    margin-top: 16px;
+    position: absolute;
+    left: 62.3%;
+    top: -1%;
+    height: 48px;
+    padding-top: 9px;
+    border: 2px solid #EFEFEF;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+
+.search-btn img{
+    vertical-align: middle;
+    border: #eaf1eb;
+    
+}
+
+.search-btn{
+    padding-left: 24px;
+    padding-right: 20px;
+}
+
+.search-txt{
+    border: none;
+    width: 216px;
+} 
+
+.like-cart{
+    position: absolute;
+    left: 92%;
+    top: 38%;
+}
+
+.likeLink{
+    margin-right: 28px;
 }

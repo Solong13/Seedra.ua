@@ -56,6 +56,11 @@ body {
     line-height: 178.19%;
 }
 
+.menu li a:hover{
+    color: #23bf35;
+    transition: all 0.5s;
+}
+
 .vl {
     border: 1px solid #EFEFEF;
     transform: rotate(180deg);
@@ -68,10 +73,33 @@ body {
     margin-right: 28px;
 }
 
+ .contacts{
+    background: url('/assets/img/instagram-filled.svg') ;
+    width: 24px;
+    height: 24px;
+    margin-right: -18px;
+}
+
+ .contacts:hover{
+    background: url('/assets/img/after-inst.png');
+    width: 24px;
+    height: 24px;
+}
+
+.nav .contactsFace{
+    background: url('/assets/img/facebook-fill.png') ;
+    width: 24px;
+    height: 24px;
+}
+
+.nav .contactsFace:hover{
+    background: url('/assets/img/after-facebook-fill.png');
+    width: 24px;
+    height: 24px;
+}
 
 
 /* Форма пошуку */
-
 .search-box{
     padding: 9px 12px 3px 12px;
     border: 2px solid #EFEFEF;
@@ -90,7 +118,7 @@ body {
     width: 250px;
 }
 
-.formForSearch, input{
+.formForSearch .search-txt{
     vertical-align: top;
 }/* Форма пошуку */
 
@@ -118,7 +146,135 @@ body {
 }/* Клас для закріпленної шапки */
 
 
-                                            /*   Контент частина документа   */
+                                            /* Початок  Контент частина документа   */
 .intro-picture{
     margin-top: 32px;
+}
+                                            /* Кінець  Контент частина документа   */
+
+
+                                                        /* Початок  Footer  */
+.v2 {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+    line-height: 178.19%;
+    margin-right: 32px;
+}
+
+.nav-footer{
+    height: 101px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #359740;
+}
+ 
+.list-footer{
+    padding-left: 0px;
+    display: flex;
+}
+
+.list-footer li{
+    margin-right: 32px;
+    list-style-type: none;
+}
+
+.list-footer li:last-child{
+    margin-right: 0px;
+}
+
+.list-footer .liPre a{
+    margin-right: 43px;
+}
+
+.list-footer li a {
+    color: #70737C; 
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 178.19%;
+}
+
+.list-footer li img {
+    margin-right: 37px;
+}
+
+
+.wrraper-information{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateOfCompany{
+    margin-top: 12px;
+}
+
+.dateOfCompany li a {
+    color: #70737C; 
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 178.19%;
+}
+
+.dateOfCompany li a img{
+    vertical-align: middle;
+}
+
+.dateOfCompany li{
+    list-style-type: none;
+}
+
+.dateOfCompany li a .amazon{
+    width: 20px;
+    vertical-align: bottom;
+}
+
+.block-info2{
+    align-self: flex-start;
+}
+
+/*Block-Footer 3*/
+.dateOfinfo2{
+    color: #70737C; 
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 178.19%;
+}
+
+.dateOfinfo2 li{
+    list-style-type: none;
+}/*Block-Footer 3*/
+
+
+/*Block-Footer 4*/
+
+.mail{
+    padding: 20px;
+    width: 228px;
+}
+
+.sing{
+    padding: 11px 33px;
+    color: #359740;
+    background: #EFEFEF;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*Block-Footer 4*/
+
+.block4 p{
+    margin-top: 113%;
 }
