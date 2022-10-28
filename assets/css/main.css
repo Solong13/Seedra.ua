@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css");
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header{
+    /* position: fixed; */
+    background: white;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.25);
+}
+
+.nav{
+    margin: 0 auto;
+    width: 1110px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu li{
+    margin-right: 15px;
+    list-style-type: none;
+
+}
+
+.menu li:last-child{
+    margin-right: 0px;
+}
+
+.menu{
+    display:flex;
+}
+
+.menu li a {
+    color: #70737C; 
+    text-decoration: none;/*Убрать подчеркивание*/
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 178.19%;
+}
+
+.vl {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+    line-height: 178.19%;
+    margin-right: 15px;
+}
+
+
+.like-cart .likeLink{
+    margin-right: 28px;
+}
+
+
+
+/* Форма пошуку */
+
+.search-box{
+    padding: 9px 12px 3px 12px;
+    border: 2px solid #EFEFEF;
+    border-radius: 40px;
+    
+}
+
+.search-btn img{
+    border: #eaf1eb;
+    vertical-align: super;
+}
+
+.search-txt{
+    
+    border: none;
+    width: 250px;
+}
+
+.formForSearch, input{
+    vertical-align: top;
+}/* Форма пошуку */
+
+
+/* Клас для закріпленної шапки */
+.header_fixed{
+    z-index: 663;
+    position: fixed;
+    background: rgba(255, 254, 255, 0.5);
+    top: 0;
+    left: 0;
+    animation-name: show_header;/*задаёт список анимаций, чтобы применить к элементу.*/
+    animation-duration: 1s; /*устанавливает длительность анимации во времени за один цикл.*/
+}
+
+@keyframes show_header { /*CSS-анимации позволяют анимировать переходы от одной конфигурации CSS стилей к другой*/
+    0%{
+        opacity: 1;/*CSS-свойство opacity устанавливает непрозрачность элемента.*/
+        top: -72px;
+    }
+    100%{
+        opacity: 0.5;
+        top: 0;
+    }
+}/* Клас для закріпленної шапки */
+
+
+                                            /*   Контент частина документа   */
+.intro-picture{
+    margin-top: 32px;
+}
