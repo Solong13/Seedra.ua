@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seedra</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -27,7 +28,7 @@
                     <div class="vl"></div>
                     <li class="all"><a href="#">OUR BLOG</a></li>
                     <div class="vl"></div>
-                    <li ><a href="#" class="last">LOGIN</a></li>
+                    <li ><a href="/partials/login.php" class="last">LOGIN</a></li>
                 </ul>
 
                 <a href="#" class="likeInst">

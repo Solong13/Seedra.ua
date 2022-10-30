@@ -164,6 +164,10 @@ body {
 
 
                                                         /* Початок  Footer  */
+footer{
+    margin-top: 92px;
+}
+
 .v2 {
     border: 1px solid #EFEFEF;
     transform: rotate(180deg);
@@ -287,4 +291,338 @@ body {
 
 .block4 p{
     margin-top: 113%;
+}
+
+
+                                    /*Our products.*/
+
+.wrraper-choose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-prod{
+    display: flex;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+.all-prod h2{
+    margin-top: 58px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.05em;
+    color: #1F2533;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*Допрацювати з виводом кількості обраного*/
+.choose-prod{
+    margin-top: 58px;
+}
+
+.choose-prod.menu_list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-prod .menu_list>li>a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    text-align: center;
+    color: #359740;
+}
+
+.choose-prod .menu_list>li{
+    position: relative;
+    list-style-type: none;
+    padding: 23px;
+    border: 2px solid #EFEFEF;
+    border-radius: 27px;
+}
+
+.choose-prod .menu_list{
+    display: flex;
+}
+
+.choose-prod .menu_list>li>a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    text-align: center;
+    color: #23bf35;
+}
+
+.choose-prod .menu_list li .veg{
+    vertical-align: bottom;
+}
+
+.choose-prod .menu_list{
+    display: flex;
+}
+
+.menu_list>li:hover .sub-menu1{
+    display: block;
+}
+
+.sub-menu1 li .sort{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    cursor: pointer;
+    letter-spacing: -0.035em;
+    color: #23bf35;
+    text-decoration: none;
+}
+
+
+
+.menu_listli:hover .sub-menu1{
+    display: block;
+}
+
+.sub-menu1{
+    border: 2px solid #EFEFEF;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    left: -1px;
+    width: 137px;
+    background: #FFFFFF;
+    border-radius: 9%;
+    padding: 15px;
+}
+
+.sub-menu1 li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    list-style-type: none;
+}
+
+.sub-menu1 li a{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    cursor: pointer;
+    letter-spacing: -0.035em;
+    color: #1F2533;
+    text-decoration: none;
+}
+
+.sub-menu1 .v3 {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+}
+/*Допрацювати з виводом кількості обраного*/
+
+
+
+.our-prod{
+    margin-top: 40px;
+}
+
+.our-prod .main-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-prod .main-menu>li>a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    text-align: center;
+    color: #1F2533;
+}
+
+.our-prod .main-menu>li{
+    position: relative;
+    list-style-type: none;
+    padding: 23px;
+    border: 2px solid #EFEFEF;
+    border-radius: 27px;
+}
+
+.our-prod .main-menu>li:hover{
+    border: 2px solid #359740;
+}
+
+.our-prod .main-menu li img{
+    vertical-align: text-bottom;
+    padding-right: 10px;
+}
+
+.our-prod .main-menu>li>a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    text-align: center;
+    color: #1F2533;
+}
+
+.our-prod .main-menu li .veg{
+    vertical-align: bottom;
+}
+
+.our-prod .main-menu{
+    display: flex;
+}
+
+
+
+.main-menu>li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu{
+    border: 2px solid #EFEFEF;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: -1px;
+    width: 305px;
+    background: #FFFFFF;
+    border-radius: 9%;
+    padding: 29px;
+}
+
+.sub-menu li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    list-style-type: none;
+}
+
+.sub-menu li a{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    cursor: pointer;
+    letter-spacing: -0.035em;
+    color: #1F2533;
+    text-decoration: none;
+}
+
+.sub-menu .v3 {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+}
+
+
+.dateWhitBD{
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products{
+    position: relative;
+    width:350px;
+    height:512px;
+    border: 2px solid #EFEFEF;
+    margin-top: 32px;
+    display: block;
+    padding: 28px;
+    border-radius: 28px;
+    margin-right: 11px;
+}
+
+.products:hover{
+    box-shadow: 10px 10px 15px #23bf35;
+}
+
+.products-title {
+    margin-top: 30px;
+    max-width: 291px;
+ 
+}
+
+.products-title a {
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+    color: #1F2533;
+}
+
+.products-but-price{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 54px;
+    color: #1F2533;
+}
+
+.buy{
+    border: 0;
+    background: #359740;
+    padding: 14px;
+    border-radius: 37px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1F2533;
+    cursor: pointer;
+}
+
+.likePost{
+    position: absolute;
+    left: 84%;
+    
+}
+
+.likePost a img{
+    cursor: pointer;
 }
