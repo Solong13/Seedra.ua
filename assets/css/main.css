@@ -166,6 +166,9 @@ body {
                                                         /* Початок  Footer  */
 footer{
     margin-top: 92px;
+    width: 100%;
+    background: #e7e9ee;
+    margin-bottom: 0;
 }
 
 .v2 {
