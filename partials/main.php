@@ -165,6 +165,38 @@
                 </div>
 
              </div>
+
+             <div class="grow-fast">
+                <div class="rew">
+                    <h2>Seedra helps to grow fast and efficiant</h2>
+                    <p>
+                         SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions created by PhD Helga George
+                        <p class="p1">
+                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom - our seeds were tested and have the best germination ratings. 
+                            Your easy growing experience is our guarantee
+                            Spinach commom culinary uses: salads, soups, smoothies, lasagne, pizza, pies, risotto, and more
+                        </p>
+                        
+                        <p class="p1">
+                            Proudly sourced in the USA - our garden seeds are grown, harvested, and packaged in the USA. We support local farmers and are happy to produce this American-made product
+                        </p>
+                        
+                </div>
+                <div class="pictureW">
+                    <img src="/assets/img/Ellipse 2.png" alt="">
+                </div>
+             </div>
              
+
+            <div class="clients">
+                <div class="review">
+                    <h2>What out clients say</h2>
+                    <form class="formForReview" action="">
+                        <input  class="buttonForReview" type="submit" value="Add Review">
+                    </form>
+                </div>
+            </div>
+
+
          </div> <!--container -->
     </section>
