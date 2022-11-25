@@ -40,47 +40,52 @@ if($is_session || $is_cookie) {
     <header class="header" id="header">
         <div class="wrraper">
             <div class="nav">
-
-                <a href="/index.php"><img src="/assets/img/Logo.svg" alt="Seedra" class="logo"></a> 
                 
-                <ul class="menu">
-                    <li class="all"> <a href="#">ALL PRODUCTS</a></li>
-                    <div class="vl"></div>
-                    <li class="all"><a href="#">ABOUT SEEDRA</a></li>
-                    <div class="vl"></div>
-                    <li class="all"><a href="#">OUR BLOG</a></li>
-                    <div class="vl"></div>
-                    <li class="status"><a href="/partials/login.php" class="last">LOGIN</a>
-                        
-                            <?php
-                            if($is_session || $is_cookie) { 
-                                $userID = $is_session ? $_SESSION['user_id'] : $_COOKIE['user_id'];
-
-                                $sql = "SELECT * FROM users WHERE id=" . $userID;// не показувати користовачів приховуючи ззаписи
-                                $result = mysqli_query($conn, $sql);
-                                while($row = $result->fetch_assoc()) { ?>
-                             
-                                <ul class="admin-status">
-                                <li class="status-us"><?php echo $row['user'] ?></li>
-                                <div class="v3"></div>
-                                <li class="status-us"><?php echo $row['role'] ?></li>
-                                <div class="v3"></div>
-                                <li> <a href="/partials/logout.php">LOGOUT</a></li>
-
+                <a href="/index.php"><img src="/assets/img/Logo.svg" alt="Seedra" class="logo"></a> 
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <li class="all"> <a href="#">ALL PRODUCTS</a></li>
+                        <div class="vl"></div>
+                        <li class="all"><a href="#">ABOUT SEEDRA</a></li>
+                        <div class="vl"></div>
+                        <li class="all"><a href="#">OUR BLOG</a></li>
+                        <div class="vl"></div>
+                        <li class="status"><a href="/partials/login.php" class="last">LOGIN</a>
+                            
                                 <?php
-                                    if($row['role'] == "admin") {
-                                ?>
-                                    <li class="adminControl"><a href="admin">Admin Control</a></li>
+                                if($is_session || $is_cookie) { 
+                                    $userID = $is_session ? $_SESSION['user_id'] : $_COOKIE['user_id'];
+
+                                    $sql = "SELECT * FROM users WHERE id=" . $userID;// не показувати користовачів приховуючи ззаписи
+                                    $result = mysqli_query($conn, $sql);
+                                    while($row = $result->fetch_assoc()) { ?>
                                 
+                                    <ul class="admin-status">
+                                    <li class="status-us"><?php echo $row['user'] ?></li>
+                                    <div class="v3"></div>
+                                    <li class="status-us"><?php echo $row['role'] ?></li>
+                                    <div class="v3"></div>
+                                    <li> <a href="/partials/logout.php">LOGOUT</a></li>
+
+                                    <?php
+                                        if($row['role'] == "admin") {
+                                    ?>
+                                        <li class="adminControl"><a href="admin">Admin Control</a></li>
+                                    
+                                    <?php
+                                        }
+                                    ?>
+                                    </ul>
                                 <?php
-                                    }
-                                ?>
-                                </ul>
-                            <?php
-                                }}
-                            ?> 
-                    </li>
-                </ul>
+                                    }}
+                                ?> 
+                        </li>
+                    </ul>
+                </nav>
+                
 
                 <a href="#" class="likeInst">
                     <div class="contacts"></div>
@@ -89,7 +94,7 @@ if($is_session || $is_cookie) {
                 <a href="#" class="likeFace">
                     <div class="contactsFace"></div>
                 </a>
-
+                
                  <div class="search-box">
                     <form action="" method="GET" class="formForSearch">
                         <button>
