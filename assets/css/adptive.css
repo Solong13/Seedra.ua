@@ -1,0 +1,131 @@
+/*Responsive*/
+ 
+/*992px - 1200px*/
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .likeFace{
+        margin-left: -35px;
+    }
+
+    .nav{
+        margin: 0 auto;
+        width: 900px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .header_fixed{
+        position: relative;
+    }
+
+    .search-box{
+        border: 0;
+        
+    }
+
+    .formForSearch button {
+        border: 0;
+        background: #EFEFEF;
+    }
+
+    .formForSearch{
+        position: absolute;
+        top: -4%;
+        left: 78%;
+        transform: translate(-50%,50%);
+        background: #EFEFEF;
+        height: 40px;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    .search-btn{
+        color: #1da1f3;
+        float: center;
+        width: 21px;
+        height: 17px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .search-txt{
+        border: none;
+        background: none;
+        outline: none;
+        float: right;
+        padding: 0;
+        color: #23bf35;
+        font-size: 16px;
+        transition: 0,4s;
+        line-height: 40px;
+        height: 20px;
+        width: 0px;
+    }
+    .formForSearch:hover > .search-txt{
+        width: 170px;
+
+    }
+
+    .menu li{
+        margin-right: 8px;
+    }
+
+
+    .menu li a {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150.19%;
+    }
+
+    .like-cart .likeLink{
+        margin-right: 20px;
+    }
+
+    .header-picture{
+        width: 900px;
+    }
+
+    .header-pic img{
+        max-width: 900px;
+    }
+
+    .pictureW img {
+        max-width: 400px;
+    }
+
+    .rew h2{
+        font-size: 30px;
+    }
+
+    .rew p{
+        font-size: 13px;
+    }
+}
+
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+
+
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*0px - 576px*/
+@media screen and (max-width: 576px) {
+
+}

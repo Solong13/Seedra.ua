@@ -674,9 +674,6 @@ p{
     justify-content: center;
 }
 
-
-
-
 .review h2{
     font-family: 'Lexend';
     font-style: normal;
@@ -700,4 +697,38 @@ p{
     border: 0;
     font-size: 17px;
     color: #e7e9ee;
+}
+
+.admin-status{
+    border: 2px solid #EFEFEF;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 612px;
+    width: 179px;
+    background: #FFFFFF;
+    border-radius: 9%;
+    padding: 29px;
+}
+
+.menu>.status:hover .admin-status{
+    display: block;
+}
+
+.admin-status .v3 {
+    border: 1px solid #EFEFEF;
+    transform: rotate(180deg);
+}
+
+.admin-status .status-us{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    cursor: pointer;
+    letter-spacing: -0.035em;
+    color: #70737C;
+    text-decoration: none;
 }

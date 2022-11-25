@@ -1,6 +1,26 @@
 <?php
+    session_start();
     require($_SERVER['DOCUMENT_ROOT'] . '/config/db.php');
+
+$is_session = isset($_SESSION['user_id']) && $_SESSION['user_id'] != null;
+$is_cookie = isset($_COOKIE['user_id']) && $_COOKIE['user_id'] != null;
+
+if($is_session || $is_cookie) {
+
+    $userID = $is_session ? $_SESSION['user_id'] : $_COOKIE['user_id'];
+
+    $sql = "SELECT * FROM users WHERE id=" . $userID; // вибираємо де вибраний айді буде дорівнювати нашому айді через сесію. Тобто шукаємо по id
+    $result = mysqli_query($conn, $sql);// виконання запросу
+    $user = $result->fetch_assoc();// вивід всіх даних, а саме сесії
+
+  } else {
+    header("Locaton: /index.php");
+}
+
+
+// $_SESSION['user_id'] = null;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +33,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/forLog.css">
+    <link rel="stylesheet" href="/assets/css/adptive.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +41,7 @@
         <div class="wrraper">
             <div class="nav">
 
-                <img src="/assets/img/Logo.svg" alt="Seedra" class="logo">
+                <a href="/index.php"><img src="/assets/img/Logo.svg" alt="Seedra" class="logo"></a> 
                 
                 <ul class="menu">
                     <li class="all"> <a href="#">ALL PRODUCTS</a></li>
@@ -29,7 +50,36 @@
                     <div class="vl"></div>
                     <li class="all"><a href="#">OUR BLOG</a></li>
                     <div class="vl"></div>
-                    <li ><a href="/partials/login.php" class="last">LOGIN</a></li>
+                    <li class="status"><a href="/partials/login.php" class="last">LOGIN</a>
+                        
+                            <?php
+                            if($is_session || $is_cookie) { 
+                                $userID = $is_session ? $_SESSION['user_id'] : $_COOKIE['user_id'];
+
+                                $sql = "SELECT * FROM users WHERE id=" . $userID;// не показувати користовачів приховуючи ззаписи
+                                $result = mysqli_query($conn, $sql);
+                                while($row = $result->fetch_assoc()) { ?>
+                             
+                                <ul class="admin-status">
+                                <li class="status-us"><?php echo $row['user'] ?></li>
+                                <div class="v3"></div>
+                                <li class="status-us"><?php echo $row['role'] ?></li>
+                                <div class="v3"></div>
+                                <li> <a href="/partials/logout.php">LOGOUT</a></li>
+
+                                <?php
+                                    if($row['role'] == "admin") {
+                                ?>
+                                    <li class="adminControl"><a href="admin">Admin Control</a></li>
+                                
+                                <?php
+                                    }
+                                ?>
+                                </ul>
+                            <?php
+                                }}
+                            ?> 
+                    </li>
                 </ul>
 
                 <a href="#" class="likeInst">
@@ -42,7 +92,11 @@
 
                  <div class="search-box">
                     <form action="" method="GET" class="formForSearch">
-                        <button><a class="search-btn" href="#" name="search" value="search"><img src="/assets/img/search.png" alt=""></a></button>
+                        <button>
+                            <a class="search-btn" href="#" name="search" value="search">
+                                <img src="/assets/img/search.png" alt="">
+                            </a>
+                        </button>
                         <input class="search-txt" type="text" name="search" placeholder="Search">
                     </form>
                 </div>

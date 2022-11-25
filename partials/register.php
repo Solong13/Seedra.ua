@@ -1,12 +1,6 @@
 <?php
     require($_SERVER['DOCUMENT_ROOT'] . '/config/db.php');
-?>
-
-<?php
     require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
-?>
-
-<?php
 
 if(isset($_POST['login']) && isset($_POST['email']) && isset($_POST['password'])){
   if(!empty($_POST['login']) && !empty($_POST['email']) && !empty($_POST['password'])){
@@ -22,14 +16,14 @@ if(isset($_POST['login']) && isset($_POST['email']) && isset($_POST['password'])
     } else{
         echo "Ошибка: " . $conn->error;
     }
-  
+
+    mysqli_close($conn);
+
     } else {
     echo "Input field is empty";
   }
 
-} else {
-  echo "The input field does not exist";
-}
+} 
 
 ?>
 
