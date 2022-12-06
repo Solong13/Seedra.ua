@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+.wrraper-content{
+    position: relative;
+}
+
 .container{
     width: 1110px;
     margin: 0 auto;

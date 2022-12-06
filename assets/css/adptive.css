@@ -36,11 +36,14 @@
         background: #EFEFEF;
     }
 
+    .like-cart{
+        margin-left: -14%;
+    }
+
     .formForSearch{
         position: absolute;
-        top: -2%;
-        left: 80%;
-        transform: translate(-50%,50%);
+        right: 1%;;
+        bottom: 85.5%;
         background: #EFEFEF;
         height: 40px;
         border-radius: 25px;
@@ -97,7 +100,7 @@
     }
 
     .header-pic img{
-        max-width: 900px;
+        width: 100%;
     }
 
     .pictureW img {
@@ -141,11 +144,20 @@
         font-size: 11px;
     }
 
+    .formForSearch button {
+        border: 0;
+        background: #EFEFEF;
+    }
+
+
+    .formForSearch:hover > .search-txt{
+        width: 170px;
+    }
+
     .formForSearch{
         position: absolute;
-        top: -2%;
-        left: 87%;
-        transform: translate(-50%,50%);
+        right: 1%;
+        bottom: 85.5%;
         background: #EFEFEF;
         height: 40px;
         border-radius: 25px;
@@ -153,11 +165,11 @@
     }
 
     .header-picture{
-        width: 720px;
+        width: 100%;
     }
 
     .header-pic img{
-        max-width: 720px;
+        width: 100%;
     }
 
     .grow-fast{
@@ -191,7 +203,7 @@
     }
 
     footer{
-        width: 768px;
+        width: 100%;
     }
 }
 
@@ -226,8 +238,8 @@
         position: relative;
     }
 
-    .header-pic img{
-        max-width: 720px;
+    .header-pic {
+        width: 100%;
     }
 
     .header_burger{
@@ -307,6 +319,7 @@
 
     .header__menu.active{
         top: 0;
+        height: 500px;
     }
 
     .likeInst{
@@ -385,14 +398,19 @@
         overflow-y:hidden;
         */ 
         }
+
+        .header {
+            width: 100%;
+        }
+
+        .header:before {
+            width: 100%;
+        }
+
         .header-picture{
             width: 100%;
         }
-    
-        .header-pic img{
-            max-width: 358px;
-        }
-    
+
         .pictureW img {
             max-width: 358px;
         }
@@ -401,9 +419,19 @@
         .header-pic img{
             width: 100%;
         }
-        .formForSearch {
-            position: absolute;
-            top: -4%;
-            left: 144%;
+
+
+        .rew{
+            max-width: 450px;
+
+        }
+
+        .rew h2{
+            display: contents;
+            font-size: 16px;
+        }
+
+        .rew p{
+            display: none;
         }
 }
