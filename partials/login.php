@@ -8,7 +8,9 @@
 
 <?php 
 if(!empty($_POST)) {
-  $sql = "SELECT * FROM `users` WHERE `Email`='" . $_POST['email'] . "' AND `Password`='" . $_POST['password'] . "'";// пошук по полям 
+  // пошук по полям
+  $sql = "SELECT * FROM `users` WHERE `Email`='"
+   . $_POST['email'] . "' AND `Password`='" . $_POST['password'] . "'"; 
 
   $result = mysqli_query($conn, $sql);// готуємо запрос
   $user = $result->fetch_assoc(); 

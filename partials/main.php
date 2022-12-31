@@ -79,92 +79,35 @@
 
              
              <div class="dateWhitBD">
+                <?php
+                            $sql = "SELECT * FROM products";
+                            $result = mysqli_query($conn, $sql);
+                            while($row = mysqli_fetch_assoc($result)){
+                    
+                            
+                        ?>
 
                 <div class="products">
                     <form action="">
                         <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
+                            <a href="#"><img src="/assets/img/<?=  $row['imageLike'] ?>" alt=""></a>
                         </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
+                        <img src="/assets/img/<?php echo $row['img']; ?>" alt="">
+                        <div class="products-title"><a href="#"><?php echo $row['title']; ?></a></div>
                         <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
+                            <div class="price"><?php echo $row['price']; ?>$</div>
+                            <div>
+                                <button id="addToCart_<?php echo $row['id']; ?>"
+                                 class="buy" onclick="addToCart(<?php echo $row['id']; ?>); return false";>
+                                 Buy Now
+                            </button>
+                            </div>
                         </div>
                     </form>
                 </div>
-
-                <div class="products">
-                    <form action="">
-                        <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
-                        </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
-                        <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
-                        </div>
-                    </form>
-                </div>
-                
-                <div class="products">
-                    <form action="">
-                        <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
-                        </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
-                        <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="products">
-                    <form action="">
-                        <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
-                        </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
-                        <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="products">
-                    <form action="">
-                        <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
-                        </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
-                        <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="products">
-                    <form action="">
-                        <div class="likePost">
-                            <a href=""><img src="/assets/img/likePost.png" alt=""></a>
-                        </div>
-                        <img src="/assets/img/cuce.png" alt="">
-                        <div class="products-title"><a href="#">Seedra Cilantro Seeds for Planting Indoor and Outdoor</a></div>
-                        <div class="products-but-price">
-                            <div class="price">1$</div>
-                            <div><button class="buy">Buy Now</button></div>
-                        </div>
-                    </form>
-                </div>
-
+                    <?php } ?>
              </div>
+
 
              <div class="grow-fast">
                 <div class="rew">

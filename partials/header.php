@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(!$_SESSION['cart']){
+    $_SESSION['cart'] = [];
+}
+
     require($_SERVER['DOCUMENT_ROOT'] . '/config/db.php');
 
 $is_session = isset($_SESSION['user_id']) && $_SESSION['user_id'] != null;
@@ -7,9 +11,9 @@ $is_cookie = isset($_COOKIE['user_id']) && $_COOKIE['user_id'] != null;
 
 if($is_session || $is_cookie) {
 
-    $userID = $is_session ? $_SESSION['user_id'] : $_COOKIE['user_id'];
-
-    $sql = "SELECT * FROM users WHERE id=" . $userID; // вибираємо де вибраний айді буде дорівнювати нашому айді через сесію. Тобто шукаємо по id
+    $userID = $is_session ? $is_session  : $is_cookie;
+// вибираємо де вибраний айді буде дорівнювати нашому айді через сесію. Тобто шукаємо по id
+    $sql = "SELECT * FROM users WHERE id=" . $userID; 
     $result = mysqli_query($conn, $sql);// виконання запросу
     $user = $result->fetch_assoc();// вивід всіх даних, а саме сесії
 
@@ -17,8 +21,6 @@ if($is_session || $is_cookie) {
     header("Locaton: /index.php");
 }
 
-
-// $_SESSION['user_id'] = null;
 ?>
 
 <!DOCTYPE html>
