@@ -1,3 +1,4 @@
+
 <section class="" id="">
         <div class="container">
             <div class="wrraper-content">
@@ -82,9 +83,19 @@
                 <?php
                             $sql = "SELECT * FROM products";
                             $result = mysqli_query($conn, $sql);
-                            while($row = mysqli_fetch_assoc($result)){
-                    
-                            
+
+                            $sql = "SELECT * FROM products";
+                            if(isset($_GET['sort_by'])){
+                                if($_GET['sort_by'] == 'most_expensive'){
+                                    $sql = "SELECT * FROM products ORDER BY price DESC";
+                                    $result = mysqli_query($conn, $sql);
+                                }elseif($_GET['sort_by'] == 'most_chep'){
+                                    $sql = "SELECT * FROM products ORDER BY price ASC";
+                                    $result = mysqli_query($conn, $sql);
+                                }
+                            }
+                        
+                            while($row = mysqli_fetch_assoc($result)){                            
                         ?>
 
                 <div class="products">
